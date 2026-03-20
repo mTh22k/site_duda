@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida | Sustentabilidade no seu dia a dia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="index.html"><img src="log.png" alt="logo"></a>
+        </div>
+
+        <div class="nav-right">
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+   <main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Menos plástico, mais futuro.</h1>
+            <p>Substitua itens de uso único por opções reutilizáveis.</p>
+            <a href="produtos.html" class="btn-primary">Ir para a Loja</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="subtitle">Nossa Missão</span>
+                <h2>Por que escolher a EcoVida?</h2>
+                <p>Todos os dias, milhões de produtos descartáveis são utilizados por poucos minutos, mas permanecem na natureza por centenas de anos.</p>
+                <p>A <strong>EcoVida</strong> surge como uma alternativa sustentável para reduzir o impacto ambiental causado pelo uso excessivo de plástico, que polui nossos rios e mares.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% Ecológico</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-recycle"></i>
+                        <span>Zero Plástico</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=600&q=80" alt="Sustentabilidade">
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">O Impacto do Plástico</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Uso efêmero</h3>
+                    <p>Produtos descartáveis são usados por minutos, mas duram séculos no solo.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-fish"></i>
+                    <h3>Vida Marinha</h3>
+                    <p>Milhares de espécies estão em risco devido ao lixo jogado nos oceanos.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Crise Global</h3>
+                    <p>Apenas uma fração do lixo mundial é reciclada corretamente hoje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que dizem nossos clientes</h2>
+            <div class="test-grid">
+                <div class="test-item">
+                    <p>"A garrafa é linda e mantém a água gelada. Adeus copos de plástico!"</p>
+                    <span>- Ana Silva</span>
+                </div>
+                <div class="test-item">
+                    <p>"Os canudos de metal são práticos e fáceis de lavar. Recomendo muito."</p>
+                    <span>- Pedro Santos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Receba dicas de sustentabilidade</h2>
+            <p>Assine nossa news e ganhe 10% de desconto na primeira compra.</p>
+            <form class="news-form">
+                <input type="email" placeholder="Seu melhor e-mail">
+                <button type="button">Assinar</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer id="contato">
+    <div class="container footer-grid">
+        <div class="footer-box">
+            <div class="logo-footer">Eco<span>Vida</span></div>
+            <p>Transformando o consumo consciente em realidade através de produtos sustentáveis e duráveis.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="produtos.html">Loja Online</a></li>
+                <li><a href="index.html#sobre">Nossa Missão</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contato</h3>
+            <p><i class="fas fa-envelope"></i> contato@ecovida.com</p>
+            <p><i class="fas fa-phone"></i> (41) 99999-9999</p>
+            <p><i class="fas fa-map-marker-alt"></i> Curitiba, PR</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Pagamento</h3>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fas fa-barcode"></i>
+                <i class="fas fa-pix"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 EcoVida - Projeto Escolar • Desenvolvido com <i class="fas fa-heart"></i></p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

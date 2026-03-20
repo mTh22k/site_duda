@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida | Loja Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="index.html"><img src="log.png" alt="logo"></a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html" class="active">Produtos</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 100px;">
+        <section class="container">
+            <h1 class="section-title">Nossos Produtos Sustentáveis</h1>
+            <p style="text-align: center; margin-bottom: 40px; color: #666;">
+                Qualidade e consciência ambiental em cada item.
+            </p>
+            
+            <div class="products-grid" id="products-grid"></div>
+        </section>
+    </main>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Seu Carrinho</h3>
+            <span class="close-cart" onclick="toggleCart()">&times;</span>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="total">Total: <span id="cart-total">R$ 0,00</span></div>
+            <button class="btn-checkout" onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-box">
+                <div class="logo-footer" style="color:var(--primary-light); font-weight:bold; font-size:1.5rem">EcoVida</div>
+                <p>Menos plástico, mais futuro.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Loja</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Pagamento</h3>
+                <div class="payment-methods" style="font-size: 1.5rem; display: flex; gap: 10px;">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fas fa-pix"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EcoVida - Trabalho Escolar 1º EM</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
