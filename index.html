@@ -21,13 +21,6 @@
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="index.html#sobre">Sobre</a></li>
             </ul>
-
-            <div class="nav-actions">
-                <div class="cart-icon" onclick="toggleCart()">
-                    <i class="fas fa-shopping-bag"></i>
-                    <span id="cart-count">0</span>
-                </div>
-            </div>
         </div>
     </nav>
 </header>
@@ -91,15 +84,75 @@
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">O que dizem nossos clientes</h2>
-            <div class="test-grid">
-                <div class="test-item">
-                    <p>"A garrafa é linda e mantém a água gelada. Adeus copos de plástico!"</p>
-                    <span>- Ana Silva</span>
+            
+            <div class="carousel-wrapper">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="testimonial-track">
+                        
+                        <div class="test-item">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Silva" class="client-avatar">
+                            <p>"A garrafa é linda e mantém a água gelada o dia todo. Adeus copos de plástico no trabalho!"</p>
+                            <div class="client-info">
+                                <h4>Ana Silva</h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="test-item">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pedro Santos" class="client-avatar">
+                            <p>"Os canudos de metal são práticos e fáceis de lavar. O kit com a escovinha ajuda demais. Recomendo muito."</p>
+                            <div class="client-info">
+                                <h4>Pedro Santos</h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="test-item">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Mariana Costa" class="client-avatar">
+                            <p>"Troquei minha escova normal pela de bambu e não me arrependo. As cerdas são ótimas e o design é lindo!"</p>
+                            <div class="client-info">
+                                <h4>Mariana Costa</h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="test-item">
+                            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="João Ferreira" class="client-avatar">
+                            <p>"Comprei a sacola ecológica para ir ao mercado e ela é super resistente. Aguenta muito peso sem rasgar."</p>
+                            <div class="client-info">
+                                <h4>João Ferreira</h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="test-item">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Beatriz Lima" class="client-avatar">
+                            <p>"O caderno reciclado tem folhas de ótima qualidade. Perfeito para a faculdade e ainda ajudo o planeta."</p>
+                            <div class="client-info">
+                                <h4>Beatriz Lima</h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="test-item">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Lucas Almeida" class="client-avatar">
+                            <p>"Entrega super rápida e embalagem sem plástico nenhum. A EcoVida realmente cumpre o que promete!"</p>
+                            <div class="client-info">
+                                <h4>Lucas Almeida</h4>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="test-item">
-                    <p>"Os canudos de metal são práticos e fáceis de lavar. Recomendo muito."</p>
-                    <span>- Pedro Santos</span>
-                </div>
+                
+                <button class="carousel-btn next" onclick="moveCarousel(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -156,7 +209,7 @@
     </div>
     
     <div class="footer-bottom">
-        <p>&copy; 2026 EcoVida - Projeto Escolar • Desenvolvido com <i class="fas fa-heart"></i></p>
+        <p>&copy; 2026 EcoVida • Desenvolvido com <i class="fas fa-heart"></i></p>
     </div>
 </footer>
 
