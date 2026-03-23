@@ -209,7 +209,7 @@ header {
     width: calc((1000px - 70px) / 2); 
     background: white; padding: 40px 30px; border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;
-    align-items: center; text-align: center; box-sizing: border-box;
+    align-items: center; text-align: center; box-sizing: border-box; flex-shrink: 0;
 }
 
 .client-avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 4px solid var(--primary-light); }
@@ -402,6 +402,67 @@ footer {
     .stats { justify-content: center; }
     .about-image img { box-shadow: none; }
     .test-item { width: calc(100vw - 80px); }
+    .hero-content h1 { font-size: 2.8rem; }
+    .page-banner h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 450px) {
+    .cart-sidebar { width: 100%; right: -100%; }
+}
+
+/* Esconde o botão do menu no computador */
+.mobile-menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+    color: var(--dark);
+}
+
+/* =========================================
+   RESPONSIVIDADE (CELULARES E TABLETS)
+========================================= */
+@media (max-width: 768px) {
+    .nav-menu { display: none; } /* Apaga esse se tiver perdido por aí! */
+    
+    .mobile-menu-icon { display: block; }
+    
+    .nav-menu {
+        display: flex !important; /* Isso força o menu a existir! */
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        max-height: 0; /* Começa escondido (altura zero) */
+        overflow: hidden;
+        transition: all 0.4s ease;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+        padding: 0; /* Zera o padding pra não dar bug visual */
+    }
+
+    .nav-menu.active {
+        max-height: 350px; /* Quando clica, ele cresce */
+        padding: 20px 0;
+    }
+
+    .nav-menu li { text-align: center; width: 100%; }
+    .nav-menu li a { display: block; padding: 15px 0; }
+
+    /* Consertando o Carrossel no celular */
+    .carousel-wrapper { padding: 0; gap: 10px; }
+    .carousel-btn { width: 40px; height: 40px; font-size: 1rem; }
+    .test-item { 
+        width: calc(100vw - 150px);
+        padding: 25px 15px; 
+        flex-shrink: 0;
+    }
+
+    .about-text { text-align: center; }
+    .stats { justify-content: center; }
+    .about-image img { box-shadow: none; }
     .hero-content h1 { font-size: 2.8rem; }
     .page-banner h1 { font-size: 2.5rem; }
 }

@@ -214,3 +214,14 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     renderCart();
 });
+
+// --- LÓGICA DO MENU MOBILE ---
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    if (menu) {
+        menu.classList.toggle('active');
+        console.log("Menu hamburguer clicado!"); // Isso ajuda a testar
+    } else {
+        console.error("Não achei o menu no HTML!");
+    }
+}
