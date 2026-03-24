@@ -1,21 +1,21 @@
 // --- 1. LISTA DE 15 PRODUTOS COM CATEGORIAS ---
 const products = [
     // Dia a Dia
-    { id: 1, name: "Sacola Ecológica", price: 29.99, category: "dia-a-dia", img: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=500&q=80" },
-    { id: 2, name: "Garrafa Reutilizável", price: 58.99, category: "dia-a-dia", img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=500&q=80" },
-    { id: 3, name: "Canudos de Metal (6pçs)", price: 19.90, category: "dia-a-dia", img: "https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=500&q=80" },
-    { id: 6, name: "Ecobag Algodão Cru", price: 35.00, category: "dia-a-dia", img: "https://images.unsplash.com/photo-1597484662317-9bd7baa12e8b?auto=format&fit=crop&w=500&q=80" },
-    { id: 14, name: "Kit Talheres de Bambu", price: 25.90, category: "dia-a-dia", img: "https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&w=500&q=80" },
+    { id: 1, name: "Sacola Ecológica", price: 29.99, category: "dia-a-dia", img: "/p1.jpeg" },
+    { id: 2, name: "Garrafa Reutilizável", price: 58.99, category: "dia-a-dia", img: "/p2.png" },
+    { id: 3, name: "Canudos de Metal (6pçs)", price: 19.90, category: "dia-a-dia", img: "/p7.png" },
+    { id: 6, name: "Ecobag Algodão Cru", price: 35.00, category: "dia-a-dia", img: "/p11.png" },
+    { id: 14, name: "Kit Talheres de Bambu", price: 25.90, category: "dia-a-dia", img: "/p7.png" },
     
     // Higiene
-    { id: 4, name: "Escova de Bambu", price: 14.90, category: "higiene", img: "https://images.unsplash.com/photo-1608042314453-ae338d80c427?auto=format&fit=crop&w=500&q=80" },
-    { id: 8, name: "Hastes Flexíveis", price: 12.90, category: "higiene", img: "https://images.unsplash.com/photo-1621252179027-94459d278660?auto=format&fit=crop&w=500&q=80" },
-    { id: 11, name: "Saboneteira Bambu", price: 22.00, category: "higiene", img: "https://images.unsplash.com/photo-1616400619175-5beda3a17896?auto=format&fit=crop&w=500&q=80" },
-    { id: 15, name: "Bucha Vegetal", price: 9.90, category: "higiene", img: "https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?auto=format&fit=crop&w=500&q=80" },
+    { id: 4, name: "Escova de Bambu", price: 14.90, category: "higiene", img: "/p3.png" },
+    { id: 8, name: "Hastes Flexíveis", price: 12.90, category: "higiene", img: "/p9.png" },
+    { id: 11, name: "Saboneteira Bambu", price: 22.00, category: "higiene", img: "/p4.png" },
+    { id: 15, name: "Bucha Vegetal", price: 9.90, category: "higiene", img: "/p10.png" },
 
     // Papelaria
-    { id: 5, name: "Caderno Reciclado", price: 28.00, category: "papelaria", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=500&q=80" },
-    { id: 13, name: "Caneta de Kraft", price: 8.50, category: "papelaria", img: "https://images.unsplash.com/photo-1585336261022-680e2a537f90?auto=format&fit=crop&w=500&q=80" }
+    { id: 5, name: "Caderno Reciclado", price: 28.00, category: "papelaria", img: "/p5.png" },
+    { id: 13, name: "Caneta de Kraft", price: 8.50, category: "papelaria", img: "/p6.png" }
 ];
 
 let cart = JSON.parse(localStorage.getItem('ecovida_cart')) || [];
