@@ -1,21 +1,21 @@
 // --- 1. LISTA DE 15 PRODUTOS COM CATEGORIAS ---
 const products = [
     // Dia a Dia
-    { id: 1, name: "Sacola Ecológica", price: 29.99, category: "dia-a-dia", img: "/p1.jpeg" },
-    { id: 2, name: "Garrafa Reutilizável", price: 58.99, category: "dia-a-dia", img: "/p2.png" },
-    { id: 3, name: "Canudos de Metal (6pçs)", price: 19.90, category: "dia-a-dia", img: "/p7.png" },
-    { id: 6, name: "Ecobag Algodão Cru", price: 35.00, category: "dia-a-dia", img: "/p11.png" },
-    { id: 14, name: "Kit Talheres de Bambu", price: 25.90, category: "dia-a-dia", img: "/p7.png" },
+    { id: 1, name: "Sacola Ecológica", price: 29.99, category: "dia-a-dia", img: "p1.jpeg" },
+    { id: 2, name: "Garrafa Reutilizável", price: 58.99, category: "dia-a-dia", img: "p2.png" },
+    { id: 3, name: "Canudos de Metal (6pçs)", price: 19.90, category: "dia-a-dia", img: "p7.png" },
+    { id: 6, name: "Ecobag Algodão Cru", price: 35.00, category: "dia-a-dia", img: "p11.png" },
+    { id: 14, name: "Kit Talheres de Bambu", price: 25.90, category: "dia-a-dia", img: "p7.png" },
     
     // Higiene
-    { id: 4, name: "Escova de Bambu", price: 14.90, category: "higiene", img: "/p3.png" },
-    { id: 8, name: "Hastes Flexíveis", price: 12.90, category: "higiene", img: "/p9.png" },
-    { id: 11, name: "Saboneteira Bambu", price: 22.00, category: "higiene", img: "/p4.png" },
-    { id: 15, name: "Bucha Vegetal", price: 9.90, category: "higiene", img: "/p10.png" },
+    { id: 4, name: "Escova de Bambu", price: 14.90, category: "higiene", img: "p3.png" },
+    { id: 8, name: "Hastes Flexíveis", price: 12.90, category: "higiene", img: "p9.png" },
+    { id: 11, name: "Saboneteira Bambu", price: 22.00, category: "higiene", img: "p4.png" },
+    { id: 15, name: "Bucha Vegetal", price: 9.90, category: "higiene", img: "p10.png" },
 
     // Papelaria
-    { id: 5, name: "Caderno Reciclado", price: 28.00, category: "papelaria", img: "/p5.png" },
-    { id: 13, name: "Caneta de Kraft", price: 8.50, category: "papelaria", img: "/p6.png" }
+    { id: 5, name: "Caderno Reciclado", price: 28.00, category: "papelaria", img: "p5.png" },
+    { id: 13, name: "Caneta de Kraft", price: 8.50, category: "papelaria", img: "p6.png" }
 ];
 
 let cart = JSON.parse(localStorage.getItem('ecovida_cart')) || [];
