@@ -5,7 +5,7 @@ const products = [
     { id: 2, name: "Garrafa Reutilizável", price: 58.99, category: "dia-a-dia", img: "p2.png" },
     { id: 3, name: "Canudos de Metal (6pçs)", price: 19.90, category: "dia-a-dia", img: "p7.png" },
     { id: 6, name: "Ecobag Algodão Cru", price: 35.00, category: "dia-a-dia", img: "p11.png" },
-    { id: 14, name: "Kit Talheres de Bambu", price: 25.90, category: "dia-a-dia", img: "p7.png" },
+    { id: 14, name: "Kit Talheres de Bambu", price: 25.90, category: "dia-a-dia", img: "p8.png" },
     
     // Higiene
     { id: 4, name: "Escova de Bambu", price: 14.90, category: "higiene", img: "p3.png" },
